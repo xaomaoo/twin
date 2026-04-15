@@ -1,13 +1,16 @@
 #include<stdio.h>
 struct teacher{
-    float salary;
+    int salary;
     char name[25];
     char department[25];
     int exp;
 };
 int main()
 {
-    struct teacher td[7];
+    int n;
+    printf("enter number of teachers=");
+    scanf("%d",&n);
+    struct teacher td[n];
     int i;
     FILE *fp;
     fp=fopen("teachdata.txt","w");
